@@ -23,6 +23,7 @@ node *build()
         return NULL;
     node *root = new node(d);
     root->left = build();
+
     root->right = build();
 
     return root;
@@ -41,7 +42,7 @@ int main()
 {
     node *root = build();
     inorder(root);
-    cout << endl;
+    cout << "thank you" << endl;
 
     return 0;
 }
